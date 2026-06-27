@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* folio/sourcemode.css
+   Markdown source mode — parchment editorial palette
+   Cinzel · EB Garamond · Warm card */
+
+/* ── Headings and properties ── */
+.cm-s-typora-default .cm-header,
+.cm-s-typora-default .cm-property {
+    color: #111111;
+    font-weight: bold;
+}
+
+/* ── Cursor ── */
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+    border-left: 2px solid #1a1a1a;
+}
+
+/* ── Comments — mid grey ── */
+.cm-s-typora-default .cm-comment {
+    color: #777777;
+    font-style: italic;
+}
+
+/* ── Strings ── */
+.cm-s-typora-default .cm-string {
+    color: #7A3A2A;
+}
+
+/* ── Atoms / numbers ── */
+.cm-s-typora-default .cm-atom,
+.cm-s-typora-default .cm-number {
+    color: #4A5A3A;
+    font-style: italic;
+}
+
+/* ── Links ── */
+.cm-s-typora-default .cm-link {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+/* ── Code spans ── */
+.cm-s-typora-default .cm-comment,
+.cm-s-typora-default .cm-code {
+    color: #3A4870;
+}
+
+/* ── Active line background ── */
+.cm-s-typora-default .CodeMirror-activeline-background {
+    background: rgba(0, 0, 0, 0.03);
+}

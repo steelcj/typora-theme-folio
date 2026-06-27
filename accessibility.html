@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+body {
+    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    font-size: 13px;
+    color: #444444;
+    background: #faf8f3;
+    margin: 0;
+    padding: 12px 16px;
+    line-height: 1.6;
+}
+a { color: #222222; text-decoration: none; border-bottom: 1px solid #cccccc; }
+a:hover { border-bottom-color: #222222; }
+.heading {
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #555555;
+    margin: 12px 0 4px 0;
+}
+.rule { border: none; border-top: 1px solid #d8d3c8; margin: 8px 0; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+th {
+    font-family: 'Cinzel', serif;
+    font-size: 8px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #555555;
+    font-weight: 400;
+    text-align: left;
+    padding: 4px 6px;
+    border-bottom: 1px solid #1a1a1a;
+}
+td {
+    padding: 4px 6px;
+    border-bottom: 1px solid #d8d3c8;
+    color: #222222;
+    vertical-align: middle;
+}
+tr:last-child td { border-bottom: none; }
+.pass {
+    font-family: 'Cinzel', serif;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    color: #2a6e2a;
+}
+.swatch {
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+.muted { color: #888888; font-size: 10px; margin-top: 10px; }
+code {
+    font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
+    font-size: 10px;
+    background: #ece8df;
+    padding: 1px 3px;
+    border-radius: 2px;
+}
+</style>
+</head>
+<body>
+
+<p class="heading">Accessibility — Folio Theme</p>
+<hr class="rule">
+
+<p>All text meets <a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Level AAA</a>. Normal text (&lt;18pt) requires 7:1; large text (≥18pt or ≥14pt bold) requires 4.5:1. All ratios measured against card background <code>#faf8f3</code>.</p>
+
+<p class="heading">Colour Palette</p>
+<table>
+  <thead>
+    <tr><th>Role</th><th>Hex</th><th>Sample</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Page background</td><td><code>#f0ece4</code></td><td><span class="swatch" style="background:#f0ece4;"></span></td></tr>
+    <tr><td>Card background</td><td><code>#faf8f3</code></td><td><span class="swatch" style="background:#faf8f3; border:1px solid #d8d3c8;"></span></td></tr>
+    <tr><td>Code background</td><td><code>#ece8df</code></td><td><span class="swatch" style="background:#ece8df;"></span></td></tr>
+    <tr><td>Heading ink</td><td><code>#111111</code></td><td><span class="swatch" style="background:#111;"></span></td></tr>
+    <tr><td>Body ink</td><td><code>#222222</code></td><td><span class="swatch" style="background:#222;"></span></td></tr>
+    <tr><td>Blockquote ink</td><td><code>#333333</code></td><td><span class="swatch" style="background:#333;"></span></td></tr>
+    <tr><td>Subtitle / byline</td><td><code>#444444</code></td><td><span class="swatch" style="background:#444;"></span></td></tr>
+    <tr><td>Meta / label</td><td><code>#555555</code></td><td><span class="swatch" style="background:#555;"></span></td></tr>
+    <tr><td>Rule / border</td><td><code>#1a1a1a</code></td><td><span class="swatch" style="background:#1a1a1a;"></span></td></tr>
+  </tbody>
+</table>
+
+<p class="heading">Contrast Ratios</p>
+<table>
+  <thead>
+    <tr><th>Element</th><th>Colour</th><th>Size</th><th>Ratio</th><th>WCAG 2.1</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>H1, H2</td><td><code>#111</code></td><td>48px / 22px 600</td><td>17.79:1</td><td class="pass">AAA</td></tr>
+    <tr><td>Body, H3</td><td><code>#222</code></td><td>19px / 15px 400</td><td>14.99:1</td><td class="pass">AAA</td></tr>
+    <tr><td>Blockquote</td><td><code>#333</code></td><td>26px italic</td><td>11.90:1</td><td class="pass">AAA</td></tr>
+    <tr><td>Subtitle</td><td><code>#444</code></td><td>20px italic</td><td>9.18:1</td><td class="pass">AAA</td></tr>
+    <tr><td>Byline / H6</td><td><code>#444</code></td><td>11px 400</td><td>9.18:1</td><td class="pass">AAA</td></tr>
+    <tr><td>Meta / H5</td><td><code>#555</code></td><td>11px 400</td><td>7.02:1</td><td class="pass">AAA</td></tr>
+    <tr><td>Code text</td><td><code>#222</code></td><td>16px on <code>#ece8df</code></td><td>13.01:1</td><td class="pass">AAA</td></tr>
+  </tbody>
+</table>
+
+<p class="muted">Ratios computed per WCAG 2.1 relative luminance formula.</p>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* folio/mermaid.css
+   Mermaid diagram theming — parchment editorial palette
+   Cinzel · EB Garamond · Warm card */
+
+:root {
+    --mermaid-theme: neutral;
+    --mermaid-font-family: 'EB Garamond', Georgia, serif;
+}
+
+/* ── Fix Mermaid label default colour ── */
+[lang='mermaid'] .label {
+    color: #222222;
+}
+
+/* ── Node fills and borders ── */
+.node rect,
+.node circle,
+.node ellipse,
+.node polygon {
+    fill: #ece8df !important;
+    stroke: #1a1a1a !important;
+    stroke-width: 1.5px !important;
+}
+
+.node .label,
+.node text {
+    fill: #111111 !important;
+    font-family: 'EB Garamond', serif !important;
+}
+
+/* ── Edge / arrow lines ── */
+.edgePath .path,
+.flowchart-link {
+    stroke: #444444 !important;
+    stroke-width: 1.5px !important;
+}
+
+.arrowheadPath {
+    fill: #444444 !important;
+    stroke: #444444 !important;
+}
+
+/* ── Edge labels ── */
+.edgeLabel {
+    background-color: #faf8f3 !important;
+    color: #444444 !important;
+}
+
+.edgeLabel rect {
+    fill: #faf8f3 !important;
+    opacity: 0.9 !important;
+}
+
+/* ── Cluster / subgraph ── */
+.cluster rect {
+    fill: rgba(0, 0, 0, 0.03) !important;
+    stroke: rgba(0, 0, 0, 0.2) !important;
+    stroke-width: 1px !important;
+}
+
+.cluster .label,
+.cluster span {
+    color: #444444 !important;
+    font-weight: 700 !important;
+}
+
+/* ── Sequence diagram actors ── */
+.actor {
+    stroke: #1a1a1a !important;
+    fill: #ece8df !important;
+}
+
+text.actor,
+.actor-line {
+    fill: #111111 !important;
+    stroke: #444444 !important;
+}
+
+/* ── Sequence diagram messages ── */
+.messageLine0,
+.messageLine1 {
+    stroke-width: 1.5px !important;
+    stroke: #444444 !important;
+}
+
+.messageText {
+    fill: #222222 !important;
+}
+
+/* ── Sequence labels ── */
+.labelBox {
+    stroke: #444444 !important;
+    fill: #ece8df !important;
+}
+
+.labelText {
+    fill: #111111 !important;
+}
+
+.loopText {
+    fill: #444444 !important;
+}
+
+.loopLine {
+    stroke: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* ── Sequence notes ── */
+.note {
+    stroke: rgba(0, 0, 0, 0.25) !important;
+    fill: rgba(0, 0, 0, 0.04) !important;
+}
+
+.noteText {
+    fill: #222222 !important;
+}
+
+/* ── Activation boxes ── */
+rect.activation0,
+rect.activation1,
+rect.activation2 {
+    stroke: #444444 !important;
+    fill: rgba(0, 0, 0, 0.06) !important;
+}
+
+/* ── Gantt chart ── */
+.grid .tick line {
+    stroke: #d8d3c8 !important;
+}
+
+.grid path {
+    stroke-width: 0 !important;
+}
+
+.section0, .section2 {
+    fill: #ece8df !important;
+    opacity: 1 !important;
+}
+
+.section1, .section3 {
+    fill: #faf8f3 !important;
+    opacity: 1 !important;
+}
+
+.task,
+.task0, .task2 {
+    fill: #222222 !important;
+    stroke: #111111 !important;
+}
+
+.task1, .task3 {
+    fill: #666666 !important;
+    stroke: #444444 !important;
+}
+
+.taskText,
+.taskTextOutside0,
+.taskTextOutside2 {
+    fill: #ffffff !important;
+}
+
+.taskTextOutside1,
+.taskTextOutside3 {
+    fill: #111111 !important;
+}
+
+.done0, .done1, .done2, .done3 {
+    fill: #d8d3c8 !important;
+    stroke: #aaaaaa !important;
+}
+
+.doneText0, .doneText1, .doneText2, .doneText3 {
+    fill: #555555 !important;
+}
+
+.crit0, .crit2 {
+    fill: #444444 !important;
+    stroke: #111111 !important;
+}
+
+.milestoneText {
+    fill: #111111 !important;
+}
+
+/* ── Gantt title and axis ── */
+.titleText,
+.sectionTitle {
+    fill: #111111 !important;
+    font-family: 'Cinzel', serif !important;
+}
+
+.tick text {
+    fill: #555555 !important;
+}
+
+/* ── Pie chart ── */
+.pieCircle {
+    stroke: #faf8f3 !important;
+    stroke-width: 2px !important;
+}
+
+.pieTitleText {
+    fill: #111111 !important;
+    font-family: 'Cinzel', serif !important;
+}
+
+.slice:nth-child(1)  { fill: #1a1a1a !important; }
+.slice:nth-child(2)  { fill: #555555 !important; }
+.slice:nth-child(3)  { fill: #888888 !important; }
+.slice:nth-child(4)  { fill: #444444 !important; }
+.slice:nth-child(5)  { fill: #777777 !important; }
+.slice:nth-child(6)  { fill: #aaaaaa !important; }
+
+.legend text {
+    fill: #222222 !important;
+}
+
+/* ── Diagram panel border on focus ── */
+#write .md-focus .md-diagram-panel {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+}
+
+.md-diagram-panel-error {
+    color: #555555;
+    font-size: 0.875em;
+}

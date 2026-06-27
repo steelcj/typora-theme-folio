@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* folio/codeblock.css
+   Code block syntax highlighting — parchment editorial palette
+   Cinzel · EB Garamond · Warm card */
+
+/* ── Base: variable, operator, property ── */
+.cm-s-inner .cm-variable,
+.cm-s-inner .cm-operator,
+.cm-s-inner .cm-property {
+    color: #222222;
+}
+
+/* ── Keywords — dark, prominent ── */
+.cm-s-inner .cm-keyword {
+    color: #111111;
+    font-weight: bold;
+}
+
+/* ── Tags — slate olive ── */
+.cm-s-inner .cm-tag {
+    color: #4A6040;
+}
+
+/* ── Attributes — slate blue ── */
+.cm-s-inner .cm-attribute {
+    color: #3A4E8A;
+}
+
+/* ── Strings — warm brown ── */
+.cm-s-inner .cm-string {
+    color: #7A3A2A;
+}
+
+/* ── String-2 ── */
+.cm-s-inner .cm-string-2 {
+    color: #8A4020;
+}
+
+/* ── Comments — mid grey, recedes ── */
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+    color: #888888;
+    font-style: italic;
+}
+
+/* ── Headers / defs — muted purple ── */
+.cm-s-inner .cm-header,
+.cm-s-inner .cm-def,
+.cm-s-inner.cm-header,
+.cm-s-inner.cm-def {
+    color: #5A3A7A;
+}
+
+/* ── Blockquote in source ── */
+.cm-s-inner .cm-quote,
+.cm-s-inner.cm-quote {
+    color: #4A6040;
+    font-style: italic;
+}
+
+/* ── Horizontal rule ── */
+.cm-s-inner .cm-hr {
+    color: #444444;
+}
+
+/* ── Links ── */
+.cm-s-inner .cm-link {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+/* ── Negative / error ── */
+.cm-s-inner .cm-negative {
+    color: #993333;
+}
+
+/* ── Positive ── */
+.cm-s-inner .cm-positive {
+    color: #2E6B2E;
+}
+
+/* ── Meta / qualifier ── */
+.cm-s-inner .cm-meta,
+.cm-s-inner .cm-qualifier {
+    color: #888888;
+}
+
+/* ── Builtins ── */
+.cm-s-inner .cm-builtin {
+    color: #6A3050;
+}
+
+/* ── Brackets ── */
+.cm-s-inner .cm-bracket {
+    color: #555555;
+}
+
+/* ── Atoms — steel blue ── */
+.cm-s-inner .cm-atom,
+.cm-s-inner.cm-atom {
+    color: #2A5A7A;
+}
+
+/* ── Numbers — forest teal ── */
+.cm-s-inner .cm-number {
+    color: #2E6A4A;
+}
+
+/* ── Variables ── */
+.cm-s-inner .cm-variable   { color: #222222; }
+.cm-s-inner .cm-variable-2 { color: #3A4870; }
+.cm-s-inner .cm-variable-3 { color: #1A6040; }
+
+/* ── Cursor ── */
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 2px solid #1a1a1a;
+    z-index: 3;
+}
+
+/* ── Selection ── */
+.CodeMirror-selectedtext,
+.CodeMirror-selected {
+    background: rgba(0, 0, 0, 0.12);
+}
+
+/* ── Active line ── */
+.CodeMirror-activeline-background {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+/* ── Gutters ── */
+.CodeMirror-gutters {
+    background: #ece8df;
+    border-right: 1px solid #d8d3c8;
+}
+
+.CodeMirror-linenumber {
+    color: #aaaaaa;
+}
